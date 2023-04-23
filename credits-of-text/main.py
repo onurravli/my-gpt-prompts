@@ -13,7 +13,7 @@ def get_credit(model: str, content: str, temp: float = 0.5) -> str:
                                               "written by you. And I want you to give their resource texts as "
                                               "a JSON. The JSON should be like this: "
                                               "[{'resource': 'resource1'}. "
-                                              "If you can't write any info about text, just return an empty JSON"},
+                                              "If you can't find any info about text, just return an empty JSON"},
                 {"role": "user", "content": content}
             ],
             "temperature": temp
